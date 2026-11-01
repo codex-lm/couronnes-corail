@@ -1,0 +1,38 @@
+{
+ "draft": {
+  "id": "bd_s_49b9f7a8-39af-4f0e-8d42-87e32a4310e6",
+  "status": "draft",
+  "repository": "codex-lm/couronnes-corail",
+  "ref": "8ca41c1ab6fce8b0b4b5ea1116725b84b70448b6",
+  "title": "",
+  "description": "",
+  "version": "1.0.0",
+  "genre": [],
+  "themes": [],
+  "controls": [],
+  "credits": [],
+  "license": "",
+  "parentReleaseId": null,
+  "gameId": "bg_s_51e3631e-67dd-4392-98c9-608fd5fe0ae0",
+  "variantId": "bv_s_baa28d91-0f2a-4db6-b39f-a5c1c4d67c88",
+  "publishWhenReady": false,
+  "createdAt": "2026-11-01T12:11:17.000Z",
+  "updatedAt": "2026-11-01T16:31:01.000Z",
+  "rightsConfirmed": true,
+  "publicationMode": "hosted",
+  "assetsLicense": "",
+  "contributions": [],
+  "basedOnReleaseIds": [],
+  "repositoryAttribution": false,
+  "repositoryHistory": {
+   "kind": "original",
+   "coverage": "full"
+  },
+  "agentImprovements": false,
+  "challenge": {
+   "path": ".lob7/ownership/bd_s_49b9f7a8-39af-4f0e-8d42-87e32a4310e6.txt",
+   "value": "0b6f8729740644899ae9942835c7fc265031726ac4abf7026166c695cb2ee283",
+   "expiresAt": "2026-11-02T12:11:17.000Z"
+  }
+ }
+}

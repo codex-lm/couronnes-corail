@@ -35,14 +35,7 @@ The current expedition, language and sound preferences are saved locally in the 
 
 ## Verification
 
-On this static-export branch, with Python Playwright available:
-
-```sh
-python tests/browser_smoke.py
-python tests/browser_journey.py
-```
-
-On the `development` branch, also run `npm test` and `npm run simulate`.
+On the `development` branch, run `npm test`, `npm run simulate`, `python tests/browser_smoke.py` and `python tests/browser_journey.py` against the static export.
 
 There are no runtime dependencies. Tests cover movement, tides, income, production, research, deterministic combat, escort protection, capture, repair, fog memory, discoveries, both primary victories, the turn-40 score, save round-trips, content translations and real Blender/GLB signatures. A complete AI game verifies port caps, valid resources and a decisive ending. The Playwright journeys exercise the actual exported game on desktop and touch layouts, including local save reload, languages, tides, a complete ending and restart.
 
@@ -57,9 +50,8 @@ The [`development` branch](https://github.com/codex-lm/couronnes-corail/tree/dev
 - `src/core/`: rules, data loading, hex mathematics, AI and local save serialization.
 - `src/ui/`: Canvas renderer, DOM interface, translations and synthesized audio.
 - `data/`: stable IDs, map, units, buildings, terrain, technologies, factions and EN/FR/ES text.
-- `assets/scripts/generate_assets.py`: original Blender generation and rendering script.
-- `assets/blend/`: 36 editable Blender scenes, including the cover studio.
-- `assets/glb/`: 35 exported models, 18 with embedded animations.
+- `assets/scripts/generate_assets.py` and `assets/blend/`: original generator and 36 editable Blender scenes, retained on `development`.
+- `assets/glb/`: 35 exported models, 18 with embedded animations, included in the static export.
 - `assets/sprites/`: transparent isometric renders used by the game.
 - `assets/textures/`: generated nacre texture, also packed in relevant Blender files.
 - `art/`: Blender-rendered cover and favicon.

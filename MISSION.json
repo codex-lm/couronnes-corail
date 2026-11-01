@@ -91,13 +91,17 @@
     },
     {
       "type": "lob7-preparation-retry",
-      "status": "authorized",
+      "status": "failed-correcting-unsupported-source-files",
       "draftId": "bd_s_49b9f7a8-39af-4f0e-8d42-87e32a4310e6",
       "idempotencyKey": "kimi-games-couronnes-corail-v1",
       "authorization": "Cédric — « vas y c'est bon la »",
       "authorizedAt": "2026-11-01T17:26:43+01:00",
       "sourceBranch": "main",
-      "sourceKind": "strict-static-export"
+      "sourceKind": "strict-static-export",
+      "commit": "8ca41c1ab6fce8b0b4b5ea1116725b84b70448b6",
+      "releaseId": "br_s_974f3e00-4057-4b66-af1b-2ce5bd4af0d7",
+      "checks": {"malware": "not-run", "policy": "not-run", "runtime": "not-run", "staticAnalysis": "not-run"},
+      "error": {"code": "BROWSER_RECIPE_REJECTED", "message": "file type not allowed in a static game: assets/blend/academy.blend"}
     }
   ],
   "notes": [
