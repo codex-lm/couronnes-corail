@@ -4,6 +4,8 @@ A complete, tide-driven miniature maritime 4X for the browser. Three civilizatio
 
 Designed and developed with Kimi for Kimi Games. English is the default interface; French and Spanish are included.
 
+**Play the published edition:** https://lob7.com/player/br_s_7d8fa223-b782-400a-8cc8-1490127f6f78
+
 ## Play
 
 No build, account, server logic or runtime dependency is required. Serve this directory over static HTTP:

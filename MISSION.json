@@ -4,7 +4,8 @@
   "kind": "one-off-creation",
   "authorization": "Cédric — mission ponctuelle du 2026-11-01",
   "startedAt": "2026-11-01T00:07:58+01:00",
-  "status": "in-progress-retry-authorized",
+  "status": "published",
+  "completedAt": "2026-11-01T18:41:51+01:00",
   "projectDirectory": "C:/dev/kimi-games/games/couronnes-corail",
   "idempotencyKey": "kimi-games-couronnes-corail-v1",
   "identity": {
@@ -32,9 +33,9 @@
     "development": "completed",
     "localTests": "passed",
     "lob7Preflight": "passed",
-    "privatePreview": "not-run",
-    "publication": "retry-authorized",
-    "publicBrowser": "not-run"
+    "privatePreview": "passed",
+    "publication": "published",
+    "publicBrowser": "passed"
   },
   "operations": [
     {
@@ -102,6 +103,29 @@
       "releaseId": "br_s_974f3e00-4057-4b66-af1b-2ce5bd4af0d7",
       "checks": {"malware": "not-run", "policy": "not-run", "runtime": "not-run", "staticAnalysis": "not-run"},
       "error": {"code": "BROWSER_RECIPE_REJECTED", "message": "file type not allowed in a static game: assets/blend/academy.blend"}
+    },
+    {
+      "type": "lob7-publication",
+      "status": "published",
+      "draftId": "bd_s_49b9f7a8-39af-4f0e-8d42-87e32a4310e6",
+      "gameId": "bg_s_51e3631e-67dd-4392-98c9-608fd5fe0ae0",
+      "variantId": "bv_s_baa28d91-0f2a-4db6-b39f-a5c1c4d67c88",
+      "releaseId": "br_s_7d8fa223-b782-400a-8cc8-1490127f6f78",
+      "commit": "b36e92518fd41fd2dc996f44c121903893957a2b",
+      "playUrl": "https://lob7.com/player/br_s_7d8fa223-b782-400a-8cc8-1490127f6f78",
+      "publishedAt": "2026-11-01T16:54:15.000Z",
+      "checks": {"malware": "passed", "policy": "passed", "runtime": "passed", "staticAnalysis": "passed"},
+      "workerStaticValidation": {"status": "passed", "webFiles": 115, "evidence": "evidence/worker-static-validation.json"},
+      "privatePreview": {"status": "passed", "colonization": true, "production": true, "research": "star_charts", "round": 2, "assetsLoaded": 28, "consoleErrors": 0, "evidence": "evidence/private-preview.json"},
+      "publicVerification": {
+        "status": "passed",
+        "manualReader": "Nouvelle expédition, colonisation avec exploitation, production d’éclaireur, recherche Star charts et tour 2 vérifiés dans le lecteur public intégré.",
+        "fullPlaythrough": "Outremer — victoire par trois phares au tour 27, trois scores publics, redémarrage réussi.",
+        "assetsLoaded": 28,
+        "consoleErrors": 0,
+        "failedAssets": 0,
+        "evidence": "evidence/public-playthrough.json"
+      }
     }
   ],
   "notes": [

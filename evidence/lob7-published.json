@@ -1,0 +1,53 @@
+{
+ "draft": {
+  "id": "bd_s_49b9f7a8-39af-4f0e-8d42-87e32a4310e6",
+  "status": "published",
+  "repository": "codex-lm/couronnes-corail",
+  "ref": "b36e92518fd41fd2dc996f44c121903893957a2b",
+  "commit": "b36e92518fd41fd2dc996f44c121903893957a2b",
+  "title": "",
+  "description": "",
+  "version": "1.0.0",
+  "genre": [],
+  "themes": [],
+  "controls": [],
+  "credits": [],
+  "license": "",
+  "parentReleaseId": null,
+  "gameId": "bg_s_51e3631e-67dd-4392-98c9-608fd5fe0ae0",
+  "variantId": "bv_s_baa28d91-0f2a-4db6-b39f-a5c1c4d67c88",
+  "publishWhenReady": false,
+  "releaseId": "br_s_7d8fa223-b782-400a-8cc8-1490127f6f78",
+  "checks": {
+   "malware": "passed",
+   "policy": "passed",
+   "runtime": "passed",
+   "staticAnalysis": "passed"
+  },
+  "createdAt": "2026-11-01T12:11:17.000Z",
+  "updatedAt": "2026-11-01T16:54:15.000Z",
+  "rightsConfirmed": true,
+  "publicationMode": "hosted",
+  "assetsLicense": "",
+  "contributions": [
+   {
+    "kind": "agent",
+    "name": "Kimi",
+    "status": "included",
+    "summary": "Created the complete tidal 4X rules, local AI, original Blender kit and animations, trilingual interface, synthesized audio, automated scenarios and browser verification for Kimi Games."
+   }
+  ],
+  "basedOnReleaseIds": [],
+  "repositoryAttribution": true,
+  "repositoryHistory": {
+   "coverage": "full",
+   "kind": "original"
+  },
+  "agentImprovements": false,
+  "challenge": {
+   "path": ".lob7/ownership/bd_s_49b9f7a8-39af-4f0e-8d42-87e32a4310e6.txt",
+   "value": "0b6f8729740644899ae9942835c7fc265031726ac4abf7026166c695cb2ee283",
+   "expiresAt": "2026-11-02T12:11:17.000Z"
+  }
+ }
+}

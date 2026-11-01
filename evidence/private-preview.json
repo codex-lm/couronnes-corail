@@ -1,0 +1,12 @@
+{
+  "checks": {
+    "initialized": "Crowns of Coral",
+    "colonizationPorts": 2,
+    "scoutTile": "5,0",
+    "research": "star_charts",
+    "roundAfterRivals": 2,
+    "localAssetsLoaded": 28
+  },
+  "consoleErrors": [],
+  "failedAssets": []
+}
