@@ -4,6 +4,8 @@ A complete, tide-driven miniature maritime 4X for the browser. Three civilizatio
 
 Designed and developed with Kimi for Kimi Games. English is the default interface; French and Spanish are included.
 
+**Play the published edition:** https://lob7.com/player/br_s_7d8fa223-b782-400a-8cc8-1490127f6f78
+
 ## Play
 
 No build, account, server logic or runtime dependency is required. Serve this directory over static HTTP:
@@ -35,34 +37,23 @@ The current expedition, language and sound preferences are saved locally in the 
 
 ## Verification
 
-```sh
-npm test
-npm run simulate
-python tests/browser_smoke.py
-python tests/browser_journey.py
-```
+On the `development` branch, run `npm test`, `npm run simulate`, `python tests/browser_smoke.py` and `python tests/browser_journey.py` against the static export.
 
-There are no runtime npm dependencies. Tests cover movement, tides, income, production, research, deterministic combat, escort protection, capture, repair, fog memory, discoveries, both primary victories, the turn-40 score, save round-trips, content translations and real Blender/GLB signatures. A complete AI game verifies port caps, valid resources and a decisive ending. The Playwright journeys exercise the actual exported game on desktop and touch layouts, including local save reload, languages, tides, a complete ending and restart.
+There are no runtime dependencies. Tests cover movement, tides, income, production, research, deterministic combat, escort protection, capture, repair, fog memory, discoveries, both primary victories, the turn-40 score, save round-trips, content translations and real Blender/GLB signatures. A complete AI game verifies port caps, valid resources and a decisive ending. The Playwright journeys exercise the actual exported game on desktop and touch layouts, including local save reload, languages, tides, a complete ending and restart.
 
 ## Rebuild the static export
 
-The committed `index.html` is the self-contained playable export, with inline JavaScript, CSS and a PNG favicon. Local JSON and image files remain beside it. To rebuild after editing the sources:
+The committed `index.html` is the self-contained playable export, with inline JavaScript, CSS and a PNG favicon. Local JSON and image files remain beside it. No build is needed on this static-export branch.
 
-```sh
-npm install
-npm run build
-```
-
-`scripts/build.mjs` bundles `src/ui/app.js` and its local module imports with the build-only esbuild dependency, then inserts the bundle and `src/ui/styles.css` into `src/ui/index.template.html`. Always run the browser journeys against this generated deliverable. LOB7 does not run npm, Blender or repository scripts.
+The [`development` branch](https://github.com/codex-lm/couronnes-corail/tree/development) additionally contains `package.json`, the lockfile and `scripts/build.mjs`. There, run `npm install` followed by `npm run build` to bundle `src/ui/app.js` and inline it with `src/ui/styles.css` into `src/ui/index.template.html`. Always test the generated `index.html` before exporting it to this branch. LOB7 does not run npm, Blender or repository scripts.
 
 ## Source layout
 
 - `src/core/`: rules, data loading, hex mathematics, AI and local save serialization.
 - `src/ui/`: Canvas renderer, DOM interface, translations and synthesized audio.
 - `data/`: stable IDs, map, units, buildings, terrain, technologies, factions and EN/FR/ES text.
-- `assets/scripts/generate_assets.py`: original Blender generation and rendering script.
-- `assets/blend/`: 36 editable Blender scenes, including the cover studio.
-- `assets/glb/`: 35 exported models, 18 with embedded animations.
+- `assets/scripts/generate_assets.py` and `assets/blend/`: original generator and 36 editable Blender scenes, retained on `development`.
+- `assets/glb/`: 35 exported models, 18 with embedded animations, included in the static export.
 - `assets/sprites/`: transparent isometric renders used by the game.
 - `assets/textures/`: generated nacre texture, also packed in relevant Blender files.
 - `art/`: Blender-rendered cover and favicon.

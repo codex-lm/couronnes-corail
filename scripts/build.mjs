@@ -19,6 +19,7 @@ const script = result.outputFiles[0].text.replace(/<\/script/gi, '<\\/script');
 const html = template
   .replace('<!-- INLINE_STYLES -->', () => `<style>${styles}</style>`)
   .replace('<!-- INLINE_SCRIPT -->', () => `<script>${script}</script>`)
-  .replaceAll('__FAVICON_BASE64__', favicon.toString('base64'));
+  .replaceAll('__FAVICON_BASE64__', favicon.toString('base64'))
+  .replaceAll('../../art/', 'art/');
 await writeFile('index.html', html);
 console.log(`Built self-contained index.html (${Buffer.byteLength(html)} bytes)`);
