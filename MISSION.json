@@ -4,7 +4,7 @@
   "kind": "one-off-creation",
   "authorization": "Cédric — mission ponctuelle du 2026-11-01",
   "startedAt": "2026-11-01T00:07:58+01:00",
-  "status": "closed-preparation-failed",
+  "status": "in-progress-retry-authorized",
   "projectDirectory": "C:/dev/kimi-games/games/couronnes-corail",
   "idempotencyKey": "kimi-games-couronnes-corail-v1",
   "identity": {
@@ -33,7 +33,7 @@
     "localTests": "passed",
     "lob7Preflight": "passed",
     "privatePreview": "not-run",
-    "publication": "preparation-failed",
+    "publication": "retry-authorized",
     "publicBrowser": "not-run"
   },
   "operations": [
@@ -88,12 +88,22 @@
       "ownershipChallenge": ".lob7/ownership/bd_s_49b9f7a8-39af-4f0e-8d42-87e32a4310e6.txt",
       "correctedStaticExportCommit": "e01cd16b58626e70f9b2d6e04753c70151a0a24f",
       "retryAttempted": false
+    },
+    {
+      "type": "lob7-preparation-retry",
+      "status": "authorized",
+      "draftId": "bd_s_49b9f7a8-39af-4f0e-8d42-87e32a4310e6",
+      "idempotencyKey": "kimi-games-couronnes-corail-v1",
+      "authorization": "Cédric — « vas y c'est bon la »",
+      "authorizedAt": "2026-11-01T17:26:43+01:00",
+      "sourceBranch": "main",
+      "sourceKind": "strict-static-export"
     }
   ],
   "notes": [
     "Le build autonome index.html est généré sur la branche development et testé sur le livrable lui-même.",
     "La branche main est un export strictement statique sans package.json, package-lock.json ni script de build.",
-    "Aucune nouvelle préparation n’a été tentée après BROWSER_RECIPE_REJECTED, conformément aux consignes de l’atelier.",
+    "Le premier refus est resté sans nouvelle tentative jusqu’à l’autorisation explicite de reprise de Cédric.",
     "Les autres jeux et les tâches planifiées n’ont pas été modifiés."
   ]
 }
