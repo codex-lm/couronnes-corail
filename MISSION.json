@@ -4,7 +4,7 @@
   "kind": "one-off-creation",
   "authorization": "Cédric — mission ponctuelle du 2026-11-01",
   "startedAt": "2026-11-01T00:07:58+01:00",
-  "status": "in-progress",
+  "status": "closed-preparation-failed",
   "projectDirectory": "C:/dev/kimi-games/games/couronnes-corail",
   "idempotencyKey": "kimi-games-couronnes-corail-v1",
   "identity": {
@@ -85,11 +85,15 @@
       "checks": {"malware": "not-run", "policy": "not-run", "runtime": "not-run", "staticAnalysis": "not-run"},
       "error": {"code": "BROWSER_RECIPE_REJECTED", "message": "package/build script not allowed in a static game: package-lock.json"},
       "publishWhenReady": false,
-      "ownershipChallenge": ".lob7/ownership/bd_s_49b9f7a8-39af-4f0e-8d42-87e32a4310e6.txt"
+      "ownershipChallenge": ".lob7/ownership/bd_s_49b9f7a8-39af-4f0e-8d42-87e32a4310e6.txt",
+      "correctedStaticExportCommit": "e01cd16b58626e70f9b2d6e04753c70151a0a24f",
+      "retryAttempted": false
     }
   ],
   "notes": [
-    "Le build autonome index.html est généré depuis les sources avec npm run build et testé sur le livrable lui-même.",
+    "Le build autonome index.html est généré sur la branche development et testé sur le livrable lui-même.",
+    "La branche main est un export strictement statique sans package.json, package-lock.json ni script de build.",
+    "Aucune nouvelle préparation n’a été tentée après BROWSER_RECIPE_REJECTED, conformément aux consignes de l’atelier.",
     "Les autres jeux et les tâches planifiées n’ont pas été modifiés."
   ]
 }
