@@ -35,25 +35,22 @@ The current expedition, language and sound preferences are saved locally in the 
 
 ## Verification
 
+On this static-export branch, with Python Playwright available:
+
 ```sh
-npm test
-npm run simulate
 python tests/browser_smoke.py
 python tests/browser_journey.py
 ```
 
-There are no runtime npm dependencies. Tests cover movement, tides, income, production, research, deterministic combat, escort protection, capture, repair, fog memory, discoveries, both primary victories, the turn-40 score, save round-trips, content translations and real Blender/GLB signatures. A complete AI game verifies port caps, valid resources and a decisive ending. The Playwright journeys exercise the actual exported game on desktop and touch layouts, including local save reload, languages, tides, a complete ending and restart.
+On the `development` branch, also run `npm test` and `npm run simulate`.
+
+There are no runtime dependencies. Tests cover movement, tides, income, production, research, deterministic combat, escort protection, capture, repair, fog memory, discoveries, both primary victories, the turn-40 score, save round-trips, content translations and real Blender/GLB signatures. A complete AI game verifies port caps, valid resources and a decisive ending. The Playwright journeys exercise the actual exported game on desktop and touch layouts, including local save reload, languages, tides, a complete ending and restart.
 
 ## Rebuild the static export
 
-The committed `index.html` is the self-contained playable export, with inline JavaScript, CSS and a PNG favicon. Local JSON and image files remain beside it. To rebuild after editing the sources:
+The committed `index.html` is the self-contained playable export, with inline JavaScript, CSS and a PNG favicon. Local JSON and image files remain beside it. No build is needed on this static-export branch.
 
-```sh
-npm install
-npm run build
-```
-
-`scripts/build.mjs` bundles `src/ui/app.js` and its local module imports with the build-only esbuild dependency, then inserts the bundle and `src/ui/styles.css` into `src/ui/index.template.html`. Always run the browser journeys against this generated deliverable. LOB7 does not run npm, Blender or repository scripts.
+The [`development` branch](https://github.com/codex-lm/couronnes-corail/tree/development) additionally contains `package.json`, the lockfile and `scripts/build.mjs`. There, run `npm install` followed by `npm run build` to bundle `src/ui/app.js` and inline it with `src/ui/styles.css` into `src/ui/index.template.html`. Always test the generated `index.html` before exporting it to this branch. LOB7 does not run npm, Blender or repository scripts.
 
 ## Source layout
 

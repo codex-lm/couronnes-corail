@@ -51,4 +51,4 @@ The script overwrites generated Blender scenes, GLB exports, sprites, nacre text
 
 ## Release checks
 
-Run `npm test`, `npm run simulate`, play the static build through HTTP, then run the LOB7 local preflight. Keep `MISSION.json` and evidence separate for local tests, private preview, publication and public-browser play. Pin the exact public GitHub commit for LOB7 preparation.
+On the `development` branch, run `npm test` and `npm run simulate`, and rebuild `index.html` with npm. On either branch, play the static build through HTTP, run the Playwright journeys, then run the LOB7 local preflight. Keep `MISSION.json` and evidence separate for local tests, private preview, publication and public-browser play. Pin the exact public GitHub commit for LOB7 preparation.

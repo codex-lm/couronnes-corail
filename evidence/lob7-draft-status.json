@@ -1,0 +1,57 @@
+{
+ "draft": {
+  "id": "bd_s_49b9f7a8-39af-4f0e-8d42-87e32a4310e6",
+  "status": "failed",
+  "repository": "codex-lm/couronnes-corail",
+  "ref": "bcde62bf0ed8ede226b12d04d68c0a878dde409f",
+  "commit": "bcde62bf0ed8ede226b12d04d68c0a878dde409f",
+  "title": "",
+  "description": "",
+  "version": "1.0.0",
+  "genre": [],
+  "themes": [],
+  "controls": [],
+  "credits": [],
+  "license": "",
+  "parentReleaseId": null,
+  "gameId": "bg_s_51e3631e-67dd-4392-98c9-608fd5fe0ae0",
+  "variantId": "bv_s_baa28d91-0f2a-4db6-b39f-a5c1c4d67c88",
+  "publishWhenReady": false,
+  "releaseId": "br_s_084a1095-3093-4bf8-9ec5-12ec5e17c598",
+  "checks": {
+   "malware": "not-run",
+   "policy": "not-run",
+   "runtime": "not-run",
+   "staticAnalysis": "not-run"
+  },
+  "error": {
+   "code": "BROWSER_RECIPE_REJECTED",
+   "message": "package/build script not allowed in a static game: package-lock.json"
+  },
+  "createdAt": "2026-11-01T12:11:17.000Z",
+  "updatedAt": "2026-11-01T12:14:13.000Z",
+  "rightsConfirmed": true,
+  "publicationMode": "hosted",
+  "assetsLicense": "",
+  "contributions": [
+   {
+    "kind": "agent",
+    "name": "Kimi",
+    "status": "included",
+    "summary": "Created the complete tidal 4X rules, local AI, original Blender kit and animations, trilingual interface, synthesized audio, automated scenarios and browser verification for Kimi Games."
+   }
+  ],
+  "basedOnReleaseIds": [],
+  "repositoryAttribution": true,
+  "repositoryHistory": {
+   "coverage": "full",
+   "kind": "original"
+  },
+  "agentImprovements": false,
+  "challenge": {
+   "path": ".lob7/ownership/bd_s_49b9f7a8-39af-4f0e-8d42-87e32a4310e6.txt",
+   "value": "0b6f8729740644899ae9942835c7fc265031726ac4abf7026166c695cb2ee283",
+   "expiresAt": "2026-11-02T12:11:17.000Z"
+  }
+ }
+}

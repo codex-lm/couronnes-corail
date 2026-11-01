@@ -33,7 +33,7 @@
     "localTests": "passed",
     "lob7Preflight": "passed",
     "privatePreview": "not-run",
-    "publication": "not-started",
+    "publication": "preparation-failed",
     "publicBrowser": "not-run"
   },
   "operations": [
@@ -75,11 +75,15 @@
     {
       "type": "lob7-browser-draft",
       "idempotencyKey": "kimi-games-couronnes-corail-v1",
-      "status": "draft",
+      "status": "failed-preparation-no-retry",
       "draftId": "bd_s_49b9f7a8-39af-4f0e-8d42-87e32a4310e6",
       "gameId": "bg_s_51e3631e-67dd-4392-98c9-608fd5fe0ae0",
       "variantId": "bv_s_baa28d91-0f2a-4db6-b39f-a5c1c4d67c88",
       "createdAt": "2026-11-01T12:11:17.000Z",
+      "preparationReleaseId": "br_s_084a1095-3093-4bf8-9ec5-12ec5e17c598",
+      "commit": "bcde62bf0ed8ede226b12d04d68c0a878dde409f",
+      "checks": {"malware": "not-run", "policy": "not-run", "runtime": "not-run", "staticAnalysis": "not-run"},
+      "error": {"code": "BROWSER_RECIPE_REJECTED", "message": "package/build script not allowed in a static game: package-lock.json"},
       "publishWhenReady": false,
       "ownershipChallenge": ".lob7/ownership/bd_s_49b9f7a8-39af-4f0e-8d42-87e32a4310e6.txt"
     }
