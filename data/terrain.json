@@ -1,0 +1,8 @@
+[
+  {"id":"ocean","nameKey":"terrain.ocean","descriptionKey":"terrain.ocean.desc","icon":"wave","model":"assets/blend/reef-01.blend","baseMove":1,"habitable":false,"color":"#123c69"},
+  {"id":"shoal","nameKey":"terrain.shoal","descriptionKey":"terrain.shoal.desc","icon":"sandbar","model":"assets/blend/reef-04.blend","baseMove":1,"passablePhases":["low","falling"],"habitable":false,"color":"#5b91a6"},
+  {"id":"reef","nameKey":"terrain.reef","descriptionKey":"terrain.reef.desc","icon":"reef","model":"assets/blend/reef-02.blend","baseMove":1,"habitable":true,"color":"#df8d7d"},
+  {"id":"current","nameKey":"terrain.current","descriptionKey":"terrain.current.desc","icon":"current","model":"assets/blend/reef-05.blend","baseMove":1,"phaseMove":{"low":2,"rising":1,"high":1,"falling":1},"habitable":false,"color":"#276d91"},
+  {"id":"ruins","nameKey":"terrain.ruins","descriptionKey":"terrain.ruins.desc","icon":"ruins","model":"assets/blend/ruin-archive.blend","baseMove":1,"habitable":false,"color":"#426b86"},
+  {"id":"rocks","nameKey":"terrain.rocks","descriptionKey":"terrain.rocks.desc","icon":"rocks","model":"assets/blend/reef-06.blend","baseMove":99,"passable":false,"habitable":false,"color":"#19334f"}
+]

@@ -1,0 +1,7 @@
+.tools/
+.mission.lock
+node_modules/
+*.log
+.DS_Store
+Thumbs.db
+__pycache__/

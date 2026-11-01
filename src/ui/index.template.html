@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0b1930">
+  <meta name="description" content="A miniature maritime 4X shaped by announced tides. Explore, found ports, research and crown an archipelago.">
+  <title>Crowns of Coral</title>
+  <link rel="icon" type="image/png" href="data:image/png;base64,__FAVICON_BASE64__">
+  <!-- INLINE_STYLES -->
+</head>
+<body>
+  <section id="menu-screen" class="menu-screen">
+    <div class="menu-vignette"></div>
+    <div class="menu-card">
+      <div class="shell-mark" aria-hidden="true"><span></span><span></span><span></span></div>
+      <p class="eyebrow">KIMI GAMES · A TIDAL 4X</p>
+      <h1 data-i18n="ui.title">Crowns of Coral</h1>
+      <p class="menu-subtitle" data-i18n="ui.subtitle"></p>
+      <p class="menu-tagline" data-i18n="ui.tagline"></p>
+      <div class="menu-actions">
+        <button id="new-game" class="button primary large" data-i18n="ui.newGame" data-confirm-new></button>
+        <button id="continue-game" class="button secondary large" data-i18n="ui.continue" hidden></button>
+        <button id="menu-help" class="button ghost" data-i18n="ui.howTo"></button>
+      </div>
+      <div class="menu-settings">
+        <label><span data-i18n="ui.language"></span><select class="language-select"><option value="en">English</option><option value="fr">Français</option><option value="es">Español</option></select></label>
+        <button class="sound-toggle icon-button" aria-label="Sound">◖))</button>
+      </div>
+      <p class="menu-foot">11 × 9 · 3 CIVILIZATIONS · 40 TURNS · EN / FR / ES</p>
+    </div>
+  </section>
+
+  <main id="game" class="game" hidden>
+    <header class="topbar">
+      <div class="brand"><span class="brand-crown" aria-hidden="true">♢</span><div><strong data-i18n="ui.title"></strong><small id="turn-label"></small></div></div>
+      <div id="resource-bar" class="resource-bar"></div>
+      <nav class="top-actions" aria-label="Game panels">
+        <button id="research-button" class="button compact"><span class="button-glyph">✧</span><span data-i18n="ui.research"></span></button>
+        <button id="help-button" class="button compact" data-i18n="ui.help"></button>
+        <button class="sound-toggle icon-button" aria-label="Sound">◖))</button>
+        <select class="language-select" aria-label="Language"><option value="en">EN</option><option value="fr">FR</option><option value="es">ES</option></select>
+        <button id="menu-button" class="icon-button" aria-label="Menu">☰</button>
+      </nav>
+    </header>
+
+    <section class="play-area">
+      <div id="map-wrap" class="map-wrap">
+        <canvas id="map" aria-label="Interactive archipelago map"></canvas>
+        <div id="tide-card" class="glass tide-card"></div>
+        <div id="faction-strip" class="faction-strip"></div>
+        <div id="objectives" class="glass objectives"></div>
+        <div class="map-controls glass">
+          <button id="zoom-in" class="icon-button" data-i18n-title="ui.zoomIn">+</button>
+          <button id="zoom-out" class="icon-button" data-i18n-title="ui.zoomOut">−</button>
+          <button id="center-map" class="icon-button" data-i18n-title="ui.center">◎</button>
+        </div>
+        <div id="map-hint" class="map-hint" data-i18n="ui.help.controls.body"></div>
+        <div id="tide-banner" class="tide-banner" hidden></div>
+      </div>
+
+      <aside class="sidebar">
+        <div class="sidebar-tabs">
+          <button class="tab active" data-tab="selection" data-i18n="ui.selection"></button>
+          <button class="tab" data-tab="chronicle" data-i18n="ui.chronicle"></button>
+        </div>
+        <div id="selection-panel" class="panel-scroll"></div>
+        <div id="chronicle-panel" class="panel-scroll" hidden></div>
+        <button id="end-turn" class="button primary end-turn" data-i18n="ui.endTurn"></button>
+      </aside>
+    </section>
+  </main>
+
+  <dialog id="modal" class="modal"><button id="modal-close" class="modal-close icon-button" aria-label="Close">×</button><div id="modal-content"></div></dialog>
+  <div id="toast" class="toast" role="status" hidden></div>
+  <!-- INLINE_SCRIPT -->
+</body>
+</html>

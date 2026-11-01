@@ -1,0 +1,821 @@
+{
+ "checkLocal": {
+  "recipe": "static-web-v1",
+  "status": "local static checks passed; remote validation still required",
+  "result": "PASSED",
+  "archive": {
+   "sha256": "0738a2c0f534fce7d4713be6831c6e744394453ee30b18d780c2e68deef66bc4",
+   "bytes": 9612711,
+   "entries": 158
+  },
+  "errors": [],
+  "warnings": [
+   "scripts package.json declares mais NON EXECUTES ; n'executer npm test / npm run build qu'apres revue du projet"
+  ],
+  "metadata": {
+   "packageScripts": {
+    "test": "node --test tests/*.test.js",
+    "simulate": "node tests/simulate.js",
+    "build": "node scripts/build.mjs"
+   }
+  },
+  "limitations": [
+   "preflight statique local : ne reconstruit pas index.html et ne prouve pas que le code compile est a jour avec les sources",
+   "scripts test/build declares dans package.json : NON EXECUTES (donnee declaree, a revoir avant tout npm test / npm run build)",
+   "notices de licence canoniques exactes, tests complets, execution isolee et moderation : verifies cote serveur uniquement",
+   "ces controles ne sont ni un sandbox JavaScript ni une verification de securite ; la CSP navigateur et l'execution AWS isolee restent requises"
+  ]
+ },
+ "manifest": [
+  {
+   "path": ".gitignore",
+   "bytes": 75,
+   "sha256": "adf34279b92dd4544860ba4122e613236262ded9cef6aaf15a4a7144dd55f52c"
+  },
+  {
+   "path": "CREDITS.md",
+   "bytes": 1620,
+   "sha256": "dd37062a469e986b0b5e90645fd340e00199415aa7443d4e1c78dcaef01960da"
+  },
+  {
+   "path": "LICENSE",
+   "bytes": 1067,
+   "sha256": "f905ca1ce7358a1e8fa08ca79b5ad19d922874a27a155a58640995adc553e076"
+  },
+  {
+   "path": "LOB7-ATTRIBUTION.json",
+   "bytes": 368,
+   "sha256": "9f19fdc697ab232421ab5bb450b8cd253fb69a579d66d0fe76734d01698ff704"
+  },
+  {
+   "path": "LOB7-GAME.json",
+   "bytes": 1042,
+   "sha256": "eb5f2ac4365299f57c833b08bda2d16ad7f8d5b6c3c791753cb4358a6d95de91"
+  },
+  {
+   "path": "MISSION.json",
+   "bytes": 1972,
+   "sha256": "ac945d4e5e3ee5c26f4a50209e9a4ef3df6a44523bba2a6ab6ff31204113315a"
+  },
+  {
+   "path": "README.md",
+   "bytes": 4711,
+   "sha256": "03d54de435dbdd1602287251bffe2e580a5a8ad62171dab5e37380ce221ee9bf"
+  },
+  {
+   "path": "index.html",
+   "bytes": 118687,
+   "sha256": "663527eebe8ee2ebd95cf961bbb989fa86436139c7f012b449b539e4b93a057c"
+  },
+  {
+   "path": "package-lock.json",
+   "bytes": 14583,
+   "sha256": "164ad8c454b004a2ef02514d37f542847ce6a473adabf7700e151c9cf0ae1f5f"
+  },
+  {
+   "path": "package.json",
+   "bytes": 385,
+   "sha256": "ba957c43618f36b241ed193af6abecebee3ae62ed4557efe106fb8bb43842305"
+  },
+  {
+   "path": "art/cover.png",
+   "bytes": 1071427,
+   "sha256": "05dc9322e83653d19e582fc22bf6e5e060a1f381d12d1bc4cd804f8a8b78c5a5"
+  },
+  {
+   "path": "art/favicon.png",
+   "bytes": 28464,
+   "sha256": "a3474544e9e73bf48a8d0cadc043b795973eb33b7d43642164a32091eb21a3e7"
+  },
+  {
+   "path": "assets/blend/academy.blend",
+   "bytes": 924655,
+   "sha256": "315c7e804ce9c179ee531905fbe943c30ae2246848c1e658c3ea5a1f20caaff8"
+  },
+  {
+   "path": "assets/blend/bastion.blend",
+   "bytes": 769568,
+   "sha256": "ea3fecfc3ee7ffd798d5ceff76b759b37544447bbcc430165be2ef6032038560"
+  },
+  {
+   "path": "assets/blend/beacon.blend",
+   "bytes": 789108,
+   "sha256": "cb4641c7d3d71b863a60767643e0f884be90421f0e1cc115e261239456207837"
+  },
+  {
+   "path": "assets/blend/bomber-coral.blend",
+   "bytes": 803978,
+   "sha256": "525815a149727694c16afa7136a7e255904f5d42ef8939a00f10c5cc2c671d41"
+  },
+  {
+   "path": "assets/blend/bomber-outremer.blend",
+   "bytes": 783059,
+   "sha256": "4e0170d17790b9a78013e78bf98af1d660834759baab5a5dd1187b515fedc30b"
+  },
+  {
+   "path": "assets/blend/bomber.blend",
+   "bytes": 782855,
+   "sha256": "88c062ab110072dd3d4a632280ee3ccc6475990e6285baba9ffa81dd120cd0a6"
+  },
+  {
+   "path": "assets/blend/colonizer-coral.blend",
+   "bytes": 915763,
+   "sha256": "c97b1cd571013f36f9a7ae646b1ba13871e0d2425f189c6c5460ea8bdbb6a814"
+  },
+  {
+   "path": "assets/blend/colonizer-outremer.blend",
+   "bytes": 894844,
+   "sha256": "f4beb3518e2226263591c1c93f8873f9690647691d707c5006f24d0e36a721af"
+  },
+  {
+   "path": "assets/blend/colonizer.blend",
+   "bytes": 894640,
+   "sha256": "b62528ab41b4c44a487e9f0e14955830677d94a261ab8194284d06e42a265f71"
+  },
+  {
+   "path": "assets/blend/cover-scene.blend",
+   "bytes": 1463991,
+   "sha256": "81afc18f3a02f3139363be9ca69a1db82918ff3d3bf2bf861dd6bf6d74798d9e"
+  },
+  {
+   "path": "assets/blend/crates.blend",
+   "bytes": 784016,
+   "sha256": "697207f441c2d929b79e6a27fa59e784a80de8814a8e07152eff0ba6a1200bec"
+  },
+  {
+   "path": "assets/blend/dock.blend",
+   "bytes": 811980,
+   "sha256": "fb5b9139d325ac4fafd2c055eb56dce9242d582f9a725915be104b44fb51b3da"
+  },
+  {
+   "path": "assets/blend/drydock.blend",
+   "bytes": 949097,
+   "sha256": "a86b8f0ae6c9cbe6eeea9b9ce92e610f71972692d0b244a6f9e7cae34df3ea6c"
+  },
+  {
+   "path": "assets/blend/escort-coral.blend",
+   "bytes": 809934,
+   "sha256": "6a8d49663b675d91090ee40ffbd11bd1ea81c9680b5f45d2c1b082aee5d80d06"
+  },
+  {
+   "path": "assets/blend/escort-outremer.blend",
+   "bytes": 789015,
+   "sha256": "890203be78060d101cfcadb75e352702b9cf9d4ec7fbd149231747a3fc3c6c56"
+  },
+  {
+   "path": "assets/blend/escort.blend",
+   "bytes": 788811,
+   "sha256": "894a99c73994e4cddc9f0d4f26cd5961145d0cc7e8a61f3327769b28938b819c"
+  },
+  {
+   "path": "assets/blend/great-lighthouse.blend",
+   "bytes": 891296,
+   "sha256": "aad0db8d5c5e7f624db5b640566cf3cdc5b0b2507721a27648013639b55ae762"
+  },
+  {
+   "path": "assets/blend/market.blend",
+   "bytes": 910066,
+   "sha256": "5c95d811323cd2c362b1fe5f013537695915ff3e777dff431b0f9116fb20c8b1"
+  },
+  {
+   "path": "assets/blend/port-crane.blend",
+   "bytes": 749510,
+   "sha256": "f7bc69fa02f13063f7d615db1b50ff9ad4c1a350f78885f33dc9ba75dbd32886"
+  },
+  {
+   "path": "assets/blend/port.blend",
+   "bytes": 1253577,
+   "sha256": "ba56fcc4c9d61db0ca012b64374f64333b894e1d6880b246c3702ab4d3a2a061"
+  },
+  {
+   "path": "assets/blend/quay.blend",
+   "bytes": 894493,
+   "sha256": "3594c15088cf956c733f76fa098fe838e90439a5bf6bba921dd479dbe1fba2e7"
+  },
+  {
+   "path": "assets/blend/reef-01.blend",
+   "bytes": 704288,
+   "sha256": "b2d0fe73bc4e2ba969fa1cb6163eb8eac0fc99d84c94a6c65234ef4aa238ce4a"
+  },
+  {
+   "path": "assets/blend/reef-02.blend",
+   "bytes": 783208,
+   "sha256": "7ddc8811c36e26d3f2054dce47b23254f29e42b40cf563afa01019bd3579a8c7"
+  },
+  {
+   "path": "assets/blend/reef-03.blend",
+   "bytes": 748670,
+   "sha256": "b1cef5952bf5f87bea5d6bd12c5bf1fc7c299bfc67162445fc61a7dc37442d4b"
+  },
+  {
+   "path": "assets/blend/reef-04.blend",
+   "bytes": 772641,
+   "sha256": "8b471568dec244dbb46ea0a15b938e8ab5fd2dcbfe821db74de8734b915d38df"
+  },
+  {
+   "path": "assets/blend/reef-05.blend",
+   "bytes": 671141,
+   "sha256": "1be8db400f6ee92c483059638add5617b618987e207cd5b291e74a40fdefc924"
+  },
+  {
+   "path": "assets/blend/reef-06.blend",
+   "bytes": 710674,
+   "sha256": "f9f2ea94ea5ecb5071c30211317dca8f71f24fee0ba73ee4d2b10789fe4dc585"
+  },
+  {
+   "path": "assets/blend/ruin-archive.blend",
+   "bytes": 812776,
+   "sha256": "d4856370892580c3fb7206486262781f5886cee3d1452c26a6aabf1d1c3d224e"
+  },
+  {
+   "path": "assets/blend/ruin-beacon.blend",
+   "bytes": 781654,
+   "sha256": "2b60f562483d563dec4d522c0e2146ce1715a77865b1390fe350add600922edf"
+  },
+  {
+   "path": "assets/blend/ruin-cache.blend",
+   "bytes": 840047,
+   "sha256": "061194cb1f922923db94e7309e35878f8a595b75b727be9e96d7372fe4927265"
+  },
+  {
+   "path": "assets/blend/sail.blend",
+   "bytes": 742169,
+   "sha256": "491ed3e99e13b195426ac8bb1c1094b88c2a53ccfaf80441cad313964c6da993"
+  },
+  {
+   "path": "assets/blend/scout-coral.blend",
+   "bytes": 744241,
+   "sha256": "0e1327188afb7b4508f46ea4b7f8a3c0175ca9a652651aac35dc9762c9c80295"
+  },
+  {
+   "path": "assets/blend/scout-outremer.blend",
+   "bytes": 746570,
+   "sha256": "c72430c150775ab7d7013037fb1edd06e82ee41cd9eaa0a9fb943bca58c2e6c4"
+  },
+  {
+   "path": "assets/blend/scout.blend",
+   "bytes": 699870,
+   "sha256": "44b44ca28c621236f250dc38a915257c404629863b60136b75907b06282f1d63"
+  },
+  {
+   "path": "assets/blend/shell-house.blend",
+   "bytes": 885160,
+   "sha256": "8a0d44a330e2e20f9bcc24a71065badcbbcbc25c623b2bf4b176c5ddbc27efc5"
+  },
+  {
+   "path": "assets/blend/shipyard.blend",
+   "bytes": 831216,
+   "sha256": "311832a7c518e8abdbcae34383e6d0f231d8524a7e6901d6269c49dd7cfbd0b9"
+  },
+  {
+   "path": "assets/glb/academy.glb",
+   "bytes": 75936,
+   "sha256": "54fa18b39cabb582ef8d62a67a431c8695f96a4b9a4de7a25ab7e2798e2c2090"
+  },
+  {
+   "path": "assets/glb/bastion.glb",
+   "bytes": 23356,
+   "sha256": "7045b06a76bacdc8037550f56eb1833e477ca5314d89d3c060759eca1f0bc8c5"
+  },
+  {
+   "path": "assets/glb/beacon.glb",
+   "bytes": 30824,
+   "sha256": "cabf46fa4d3aba949ef1fbc0131aa6a3490f22685c0ed01f8c928769ef26182b"
+  },
+  {
+   "path": "assets/glb/bomber-coral.glb",
+   "bytes": 40276,
+   "sha256": "55e4b85a6d4ef13831bdf421a31de6e0afb03c2ed61c6b1fb37b4bea6bd3542a"
+  },
+  {
+   "path": "assets/glb/bomber-outremer.glb",
+   "bytes": 31808,
+   "sha256": "181a9949b077864393345b720565f78513a61fe62dc699535dde24589004f180"
+  },
+  {
+   "path": "assets/glb/bomber.glb",
+   "bytes": 36064,
+   "sha256": "3ca16373a97f7ee0a404435d3081a3fdf3f63474f0e711e2a9e77a1879390e94"
+  },
+  {
+   "path": "assets/glb/colonizer-coral.glb",
+   "bytes": 87176,
+   "sha256": "131007fdfbbfe9d0bafc4a87d4c30fdba36dc2cee47065a0168bf6285e64f3fc"
+  },
+  {
+   "path": "assets/glb/colonizer-outremer.glb",
+   "bytes": 78612,
+   "sha256": "d1dd7b3c777cbc358088a256eeee67035e68c3ca41070c8a298345010999156d"
+  },
+  {
+   "path": "assets/glb/colonizer.glb",
+   "bytes": 80436,
+   "sha256": "3db6540e918f8b2a61d026ff50d43aa013f990ff1aef181a1c86541783d1c96b"
+  },
+  {
+   "path": "assets/glb/crates.glb",
+   "bytes": 21264,
+   "sha256": "227f2712e5ed249af56686f4dc3444595c3838048b3759fc407b1e96d20f844b"
+  },
+  {
+   "path": "assets/glb/dock.glb",
+   "bytes": 31796,
+   "sha256": "8fe61e86acba47052334b1c952ab6e209472d33127f89c1c9b954c3e4dcf0ac3"
+  },
+  {
+   "path": "assets/glb/drydock.glb",
+   "bytes": 78640,
+   "sha256": "dddb5c0ced97dfce2e618acd1864a4fec57d3182a7eb66e1b7b1291018d5a1dd"
+  },
+  {
+   "path": "assets/glb/escort-coral.glb",
+   "bytes": 52344,
+   "sha256": "f9898741bdf64a7a3a4f5364c8edbe882f0221665dfc1a21c0d24b08834a0236"
+  },
+  {
+   "path": "assets/glb/escort-outremer.glb",
+   "bytes": 43884,
+   "sha256": "ea895c99c83c1e308d208ab8276be8062a6e013d7f677c6455d0a9774bf0e6b4"
+  },
+  {
+   "path": "assets/glb/escort.glb",
+   "bytes": 48148,
+   "sha256": "e0671c27f501d705e5a75c6cd8e4182630f7d03f6968bc57b40c06d33e0dff0b"
+  },
+  {
+   "path": "assets/glb/great-lighthouse.glb",
+   "bytes": 69560,
+   "sha256": "efe6fe4b445e40822908dcb98c048dff2886d4162177999ff0c8f7d0a0c53383"
+  },
+  {
+   "path": "assets/glb/market.glb",
+   "bytes": 78656,
+   "sha256": "c597c4f04c2d287b581b7617336c30b7c6825680d590dffe8d6c9eb153e262f1"
+  },
+  {
+   "path": "assets/glb/port-crane.glb",
+   "bytes": 14844,
+   "sha256": "abebbabf13d4b068f66c309647f5862630de8f12c7d9612402789a377249d246"
+  },
+  {
+   "path": "assets/glb/port.glb",
+   "bytes": 180960,
+   "sha256": "892f8b10478177a8fa8296bff84a41cac073e6c9177de1be8da5b5df05266f49"
+  },
+  {
+   "path": "assets/glb/quay.glb",
+   "bytes": 56012,
+   "sha256": "c697d730696d1806b94dc6e9e8927513a7e4421091640c751f754f27bd29f2aa"
+  },
+  {
+   "path": "assets/glb/reef-01.glb",
+   "bytes": 57468,
+   "sha256": "e528790e41586a842e2986fc37650d5e1811ec022ea241a51025ebcfecfe0005"
+  },
+  {
+   "path": "assets/glb/reef-02.glb",
+   "bytes": 74428,
+   "sha256": "f9f360de14a4acb104e2e7fbf3eac1694964182f439f7d75132ef8ca449c9bed"
+  },
+  {
+   "path": "assets/glb/reef-03.glb",
+   "bytes": 63072,
+   "sha256": "d5ae1e5cbf82405a702d0ff020a5f7bb080149451c44605c2387d7074597fb72"
+  },
+  {
+   "path": "assets/glb/reef-04.glb",
+   "bytes": 71624,
+   "sha256": "a66be0bbb10ff09446027e691d0b9b04809d43533f2ac90398b3e24dd632df28"
+  },
+  {
+   "path": "assets/glb/reef-05.glb",
+   "bytes": 31348,
+   "sha256": "75586910a026be007ece32012cf67283ac1c0a58c9443ca04fad01f7bd719af3"
+  },
+  {
+   "path": "assets/glb/reef-06.glb",
+   "bytes": 29964,
+   "sha256": "853b51d3159e4d7e4a23fd4294f73d6a3cb385afac48cb4ca9ab94de07f85893"
+  },
+  {
+   "path": "assets/glb/ruin-archive.glb",
+   "bytes": 38208,
+   "sha256": "18cf5ec741ce7423f6f3062663483e64f24250d461372f4d1ce27651dd50547b"
+  },
+  {
+   "path": "assets/glb/ruin-beacon.glb",
+   "bytes": 27032,
+   "sha256": "763802cc80c528a5c60a093360b341de81ecceff539784c453b4034020ff77c2"
+  },
+  {
+   "path": "assets/glb/ruin-cache.glb",
+   "bytes": 39852,
+   "sha256": "da0e4ac7bc62166fbda401fd691092609cc77fe642c446da596578e92dc127aa"
+  },
+  {
+   "path": "assets/glb/sail.glb",
+   "bytes": 11540,
+   "sha256": "a12db419d26195731625a27ac80983bd13f966f6d115f31696dd4cabc4bd66e8"
+  },
+  {
+   "path": "assets/glb/scout-coral.glb",
+   "bytes": 36348,
+   "sha256": "c2bfdc9a5166ac12143fb3605de5a09ec337fc703f5a7d660cef3ec646dd25fc"
+  },
+  {
+   "path": "assets/glb/scout-outremer.glb",
+   "bytes": 27784,
+   "sha256": "3fbc3a53e8378313372bc992b0092f636b10dab23f8b69d8cc41a9ea68870cd7"
+  },
+  {
+   "path": "assets/glb/scout.glb",
+   "bytes": 31836,
+   "sha256": "111108a79a54342665f74214e6dec58c55402b8658654a8b6dbadf386700c6e8"
+  },
+  {
+   "path": "assets/glb/shell-house.glb",
+   "bytes": 62848,
+   "sha256": "096ab546ca30bc6191ef8cb590ad8e591a21840f34a57fa6951f03f17cad4493"
+  },
+  {
+   "path": "assets/glb/shipyard.glb",
+   "bytes": 47088,
+   "sha256": "616426c6b974c3a59ab9bc5baedfbdd1adcac8a287afdb3764f5fc5810227804"
+  },
+  {
+   "path": "assets/scripts/generate_assets.py",
+   "bytes": 22804,
+   "sha256": "df003764385a0fb49bc21b0fad7e807e09c70cb8974363ac5043c7cdd16cda8c"
+  },
+  {
+   "path": "assets/sprites/academy.png",
+   "bytes": 43895,
+   "sha256": "d3d8fcfc399fe8a8588c2cf395b17018fdc446687a570898801aaea603d26f62"
+  },
+  {
+   "path": "assets/sprites/bastion.png",
+   "bytes": 47860,
+   "sha256": "e1b421f22377c3507f5624b8b54b7845ff8abc1f67a966b7eb529e672d9bf300"
+  },
+  {
+   "path": "assets/sprites/beacon.png",
+   "bytes": 28464,
+   "sha256": "a3474544e9e73bf48a8d0cadc043b795973eb33b7d43642164a32091eb21a3e7"
+  },
+  {
+   "path": "assets/sprites/bomber-coral.png",
+   "bytes": 39358,
+   "sha256": "f7743980fa95fedb61b29726ffac223c4278bfdf953a349abc06a54ece7e7f18"
+  },
+  {
+   "path": "assets/sprites/bomber-nacre.png",
+   "bytes": 39116,
+   "sha256": "c823392a9b2a234484b30e1696085a954dc32af25939f51b0d359d5088a54448"
+  },
+  {
+   "path": "assets/sprites/bomber-outremer.png",
+   "bytes": 38823,
+   "sha256": "0a854c7c1d3cc1115fdea0e16fb59c9f9321cde8b958f4ad8a8acb7dbccfb88f"
+  },
+  {
+   "path": "assets/sprites/bomber.png",
+   "bytes": 39116,
+   "sha256": "c823392a9b2a234484b30e1696085a954dc32af25939f51b0d359d5088a54448"
+  },
+  {
+   "path": "assets/sprites/colonizer-coral.png",
+   "bytes": 38975,
+   "sha256": "96a468fd03279c7e9b5bcf0c982fd8aa6f985086877e309da91490ff27b106eb"
+  },
+  {
+   "path": "assets/sprites/colonizer-nacre.png",
+   "bytes": 39901,
+   "sha256": "7390effe347661fbeb39231a055b878d31f366405b26b18e9dcabaeea1200ac6"
+  },
+  {
+   "path": "assets/sprites/colonizer-outremer.png",
+   "bytes": 39454,
+   "sha256": "464ca98a815c807b063fa75763ef6083b69a0ba219d4064755073a0db873ae29"
+  },
+  {
+   "path": "assets/sprites/colonizer.png",
+   "bytes": 39901,
+   "sha256": "7390effe347661fbeb39231a055b878d31f366405b26b18e9dcabaeea1200ac6"
+  },
+  {
+   "path": "assets/sprites/crates.png",
+   "bytes": 26560,
+   "sha256": "1d17196e4f6e0854fc97dfeb9de93c9a1fd76d595680dd113f3063568d531edf"
+  },
+  {
+   "path": "assets/sprites/dock.png",
+   "bytes": 39828,
+   "sha256": "7636d4adf79e8e62d8c5be101239340b8235c8a23d1a63c1f82660be8654633b"
+  },
+  {
+   "path": "assets/sprites/drydock.png",
+   "bytes": 65382,
+   "sha256": "4e10d2b95dca946df3f4856837c9e1e27d6e0a58bab523070551aade0f60c948"
+  },
+  {
+   "path": "assets/sprites/escort-coral.png",
+   "bytes": 42541,
+   "sha256": "ecc88a9a553cbe9aad7cc656abdff4f57fc8a6fbf139cfdf9f785c522085fb69"
+  },
+  {
+   "path": "assets/sprites/escort-nacre.png",
+   "bytes": 43701,
+   "sha256": "fe3cab5e603d217ab73076c2901d529c4b5044c274b72bdabdeae4a9bb82d1e1"
+  },
+  {
+   "path": "assets/sprites/escort-outremer.png",
+   "bytes": 43674,
+   "sha256": "cf90a0e9f21f475e923ea7c05ee8e63752472c328e8ee17d5abed7d6af50c8b0"
+  },
+  {
+   "path": "assets/sprites/escort.png",
+   "bytes": 43701,
+   "sha256": "fe3cab5e603d217ab73076c2901d529c4b5044c274b72bdabdeae4a9bb82d1e1"
+  },
+  {
+   "path": "assets/sprites/great-lighthouse.png",
+   "bytes": 40293,
+   "sha256": "c8b0a6da7b039d4c910099c5d4c021aa01b42936029c88281900276f091a0d41"
+  },
+  {
+   "path": "assets/sprites/market.png",
+   "bytes": 44990,
+   "sha256": "c943cab0113a6f057cffd717791ad716502f99caaf03909c2b0ffe48e2f3510b"
+  },
+  {
+   "path": "assets/sprites/port-crane.png",
+   "bytes": 24915,
+   "sha256": "7c76b477cd509a7bc2acea5a3703431f9869de0787fe8542c9bc8601708eba68"
+  },
+  {
+   "path": "assets/sprites/port.png",
+   "bytes": 50229,
+   "sha256": "53d6c64e36c5998a3081efc15d11269d929845d99bf52e8a6970da41c00ba742"
+  },
+  {
+   "path": "assets/sprites/quay.png",
+   "bytes": 56233,
+   "sha256": "47ee4ee7f68c44e70734263b26e92acc51778e8f6a9a660da1e89a2271f2e2ea"
+  },
+  {
+   "path": "assets/sprites/reef-01.png",
+   "bytes": 41997,
+   "sha256": "d356c9c7b963ee8b397864b881d272a3a74ee1d3ac07008a653260bdbfc87823"
+  },
+  {
+   "path": "assets/sprites/reef-02.png",
+   "bytes": 45588,
+   "sha256": "f8ce8d850bb09dd952c4ad7e8dc2e77d8d09342b99738a668206557e1b29b07a"
+  },
+  {
+   "path": "assets/sprites/reef-03.png",
+   "bytes": 45403,
+   "sha256": "5add8e1080272efa3840ed85a1a8b67d9f7c4db396168a9e71d7ccb779ea16a2"
+  },
+  {
+   "path": "assets/sprites/reef-04.png",
+   "bytes": 48482,
+   "sha256": "66867baa3f6452fa494f1714ac538f23f7a6897708d77ba160d5ba2ffdc4d320"
+  },
+  {
+   "path": "assets/sprites/reef-05.png",
+   "bytes": 40088,
+   "sha256": "4fd0550f94f048f9b668cfa221e732f9f418c3562cec5a0fcd0c9475e81400f6"
+  },
+  {
+   "path": "assets/sprites/reef-06.png",
+   "bytes": 44169,
+   "sha256": "7a6beaa83cea051396228c00b86d8fb163791ceb17531e31d306150810fd80bb"
+  },
+  {
+   "path": "assets/sprites/ruin-archive.png",
+   "bytes": 42699,
+   "sha256": "97ecadf5feb4ec54117b7b5cdcc45c2daffa962ec580914c5976c5ee43e7f419"
+  },
+  {
+   "path": "assets/sprites/ruin-beacon.png",
+   "bytes": 44006,
+   "sha256": "a5ef6f938c14046d03086b50782018d1686087afc979efbaf42b771393d4503e"
+  },
+  {
+   "path": "assets/sprites/ruin-cache.png",
+   "bytes": 39991,
+   "sha256": "5dcf1a091599e53008e7a6db2ac81487921e594a788b79a8b9c9751057da4586"
+  },
+  {
+   "path": "assets/sprites/sail.png",
+   "bytes": 28135,
+   "sha256": "9f21cc355fcc26f38967fda67798e99a77e486a884d690044825b16dea673c13"
+  },
+  {
+   "path": "assets/sprites/scout-coral.png",
+   "bytes": 34568,
+   "sha256": "63734068e928fab8935959c6f40e7b11b0be7450347b73b77dcc24f50faf991a"
+  },
+  {
+   "path": "assets/sprites/scout-nacre.png",
+   "bytes": 35797,
+   "sha256": "ed80f419373ddff04799b12b39379666a8db17777fbde737cfa9f0010ceab324"
+  },
+  {
+   "path": "assets/sprites/scout-outremer.png",
+   "bytes": 35345,
+   "sha256": "f0847de1f99999d864c1640657cae98433fbbd5624b9260294ac1f694fa5ece2"
+  },
+  {
+   "path": "assets/sprites/scout.png",
+   "bytes": 35797,
+   "sha256": "ed80f419373ddff04799b12b39379666a8db17777fbde737cfa9f0010ceab324"
+  },
+  {
+   "path": "assets/sprites/shell-house.png",
+   "bytes": 31975,
+   "sha256": "5eae2a2fd4c27f1997a973705ecf7b1e54496f97cc5e7c420186e6e95910eaef"
+  },
+  {
+   "path": "assets/sprites/shipyard.png",
+   "bytes": 52403,
+   "sha256": "b1bf4fdbca312024bde69292aa15a35104f0c361b45f23ba2bc2fff5dc768296"
+  },
+  {
+   "path": "assets/textures/pearl-microtexture.png",
+   "bytes": 6481,
+   "sha256": "a30d9e84aaceb6802e8c25d90fbfe3e5ccf274e854e61f3fa013f9b14b6bbe73"
+  },
+  {
+   "path": "data/buildings.json",
+   "bytes": 2028,
+   "sha256": "04c7327f268220d368fa4a1b46eff052f1956aea080088597bd46c814b464e1a"
+  },
+  {
+   "path": "data/factions.json",
+   "bytes": 573,
+   "sha256": "c60dc04dc81b80c0cd96962580069799ac63b1d07fae7e8c10f39a91e087fdfd"
+  },
+  {
+   "path": "data/locales.json",
+   "bytes": 46280,
+   "sha256": "8a5f1ef8b24478be13f19f4bda98649c77196a4cf1a0e4cf33e41c0264261028"
+  },
+  {
+   "path": "data/map-reference.json",
+   "bytes": 1206,
+   "sha256": "89fdc959a8250a4ff52822fc21c01f33cde9f6614c8b022147493fb0ac94a5cf"
+  },
+  {
+   "path": "data/technologies.json",
+   "bytes": 3074,
+   "sha256": "f9edc61e928e29ebdbff9e16a5b8e2f5f2fee4a14bddb40adfa5ed0c558da341"
+  },
+  {
+   "path": "data/terrain.json",
+   "bytes": 1217,
+   "sha256": "8c44cb695a6245b2f6ab8f16e0fd624e82da6c40e52c21b47b0e17657de31388"
+  },
+  {
+   "path": "data/units.json",
+   "bytes": 1226,
+   "sha256": "a59aaa91d065ce047acd6e15cbf24f7877891c66944487b5080280b557a7058e"
+  },
+  {
+   "path": "docs/EXTENDING.md",
+   "bytes": 5147,
+   "sha256": "10d728cde87b984ca15369be80c539d8487b6bd5ec5003765455a3ac28aee684"
+  },
+  {
+   "path": "evidence/browser-gameover.png",
+   "bytes": 129345,
+   "sha256": "acbccbe8712da59f38d8eea9b40d364e9d222c2a7619f1533f0a5d0c7e4b46f6"
+  },
+  {
+   "path": "evidence/browser-journey.json",
+   "bytes": 1076,
+   "sha256": "99292d519816004fd3ce9c10ed331a290dff99f098096f16f07032c52f64fcac"
+  },
+  {
+   "path": "evidence/desktop-game.png",
+   "bytes": 311798,
+   "sha256": "b79a9601220ee8eabca68a63ebe3badc28803e6ad6988c6d7d5eac1241fb2291"
+  },
+  {
+   "path": "evidence/desktop-turn-5.png",
+   "bytes": 332947,
+   "sha256": "a0121262168f400e311421aaf4ae5f2587b604545e50a54852434cfbf05d6701"
+  },
+  {
+   "path": "evidence/lob7-preflight.json",
+   "bytes": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "evidence/mobile-game.png",
+   "bytes": 414595,
+   "sha256": "d9aca9046d3fe61310e24d80e4ff178792c114444efe8398201a4017e21a110d"
+  },
+  {
+   "path": "evidence/mobile-port.png",
+   "bytes": 394852,
+   "sha256": "854c9ab094bce65ffa95e5ad550adeda99de15f37e3a10ce183878666218fa83"
+  },
+  {
+   "path": "evidence/simulation.json",
+   "bytes": 16311,
+   "sha256": "db6f0ead156046886deb9a05b8e926fb3137af26047b0dbe16d36a60da3379ad"
+  },
+  {
+   "path": "scripts/build.mjs",
+   "bytes": 879,
+   "sha256": "a70fca079ddf87845717e65f648f8ba5e7246339ee7d17da1d7c1704374d69ec"
+  },
+  {
+   "path": "src/core/ai.js",
+   "bytes": 9731,
+   "sha256": "5b0b2abc97b9f9ac3e3c6df5026b643607390e8e4d2c4474e0d51d265712e18c"
+  },
+  {
+   "path": "src/core/data.js",
+   "bytes": 2443,
+   "sha256": "a5fb1a37e5160e1a6eb2cab0cf250d8149e2fd0e521eae48ea512d04b1671b16"
+  },
+  {
+   "path": "src/core/engine.js",
+   "bytes": 31282,
+   "sha256": "47043b595848f16b6d0ed09cb7d4423613fa2543462e294f98b9c6d732e1b8d2"
+  },
+  {
+   "path": "src/core/hex.js",
+   "bytes": 1006,
+   "sha256": "d60b3025ebdbef63b615794157eef6e8c0e9291c0a087acce3d1f6c9556b136b"
+  },
+  {
+   "path": "src/core/save.js",
+   "bytes": 909,
+   "sha256": "367231d580ccd70b556884bd9a63ec373d97001b4cfe82378166148c5d07b654"
+  },
+  {
+   "path": "src/ui/app.js",
+   "bytes": 30531,
+   "sha256": "f8cb09c86298236b1e887f542c28ae12166b5310c9106f4235e527e9b6a7efae"
+  },
+  {
+   "path": "src/ui/audio.js",
+   "bytes": 1759,
+   "sha256": "320d06f4c00a4e0223e0c0547b059df17ffe3e22957f775749a313de45410961"
+  },
+  {
+   "path": "src/ui/i18n.js",
+   "bytes": 800,
+   "sha256": "e6c5418cbb0ba46fea1a4e90f3754811a88d536bbf8800d220311aa20be5c226"
+  },
+  {
+   "path": "src/ui/index.template.html",
+   "bytes": 4288,
+   "sha256": "67a1d0bceea24dd3583a78e986a52bd7e9469acee4ac4cc03b9b5371a1f7b59c"
+  },
+  {
+   "path": "src/ui/renderer.js",
+   "bytes": 20769,
+   "sha256": "4bde6cb4004290f69ec97dbea4673fed4756cd2297d15eeb3bb451cc7407f916"
+  },
+  {
+   "path": "src/ui/styles.css",
+   "bytes": 17892,
+   "sha256": "f4b7e4415cbe4334277a3afe012363d3fa8865fbe33b841fdc39e495256aee88"
+  },
+  {
+   "path": "tests/browser_journey.py",
+   "bytes": 6677,
+   "sha256": "5c0176686a4f906628a4e132df8b01a2ac8787828d32ad71e574030725c0fa81"
+  },
+  {
+   "path": "tests/browser_smoke.py",
+   "bytes": 2102,
+   "sha256": "4558243fdf81b7980d36f2f99197d314284919f0c06170c077be09a3404338f9"
+  },
+  {
+   "path": "tests/content.test.js",
+   "bytes": 4525,
+   "sha256": "f98216d10b2a61792d26a9141659976fb0e359943137b754fe887c1e5e3260fa"
+  },
+  {
+   "path": "tests/engine.test.js",
+   "bytes": 14424,
+   "sha256": "55242864e6e659e94b45117bc98ea37cd809ddf55b59fea047548f260beaddde"
+  },
+  {
+   "path": "tests/helpers.js",
+   "bytes": 1074,
+   "sha256": "178182e5087adb59d23df6fb840908f0473dcc070045cf3b299fb3a69ff05937"
+  },
+  {
+   "path": "tests/simulate.js",
+   "bytes": 1476,
+   "sha256": "7fe7a907ef6132bc9439295a91d3cf4c6c2f4e625ee4df3f43dfb8fbd9d57ee2"
+  }
+ ]
+}

@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "contributions": [
+    {
+      "name": "Kimi",
+      "kind": "agent",
+      "summary": "Created the complete tidal 4X rules, local AI, original Blender kit and animations, trilingual interface, synthesized audio, automated scenarios and browser verification for Kimi Games.",
+      "status": "included"
+    }
+  ],
+  "basedOnReleaseIds": []
+}

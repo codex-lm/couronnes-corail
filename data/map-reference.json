@@ -1,0 +1,36 @@
+{
+  "id": "crown-archipelago-reference",
+  "nameKey": "map.reference",
+  "width": 11,
+  "height": 9,
+  "tidePhases": ["low", "rising", "high", "falling"],
+  "tokens": {
+    ".": {"terrain": "ocean"},
+    "~": {"terrain": "current"},
+    "=": {"terrain": "shoal"},
+    "R": {"terrain": "reef"},
+    "^": {"terrain": "rocks"},
+    "F": {"terrain": "ocean", "resource": "provisions", "yield": 2},
+    "M": {"terrain": "ocean", "resource": "materials", "yield": 2},
+    "K": {"terrain": "ocean", "resource": "knowledge", "yield": 2},
+    "A": {"terrain": "ruins", "site": "pearl_archive"},
+    "C": {"terrain": "ruins", "site": "supply_cache"},
+    "B": {"terrain": "ruins", "site": "tide_beacon"}
+  },
+  "rows": [
+    "..F~...M..K",
+    ".RR=..~..RR",
+    "F.MM..^..MK",
+    ".=~~.R.R~=.",
+    "M..C=^=A.BF",
+    ".K..R.R..~M",
+    ".RM..~.KRRF",
+    "..F~.RR.RK.",
+    "K..M.=...F."
+  ],
+  "starts": [
+    {"factionId":"nacre","capital":{"q":1,"r":1},"scout":{"q":1,"r":2},"colonizer":{"q":2,"r":1}},
+    {"factionId":"coral","capital":{"q":9,"r":1},"scout":{"q":9,"r":0},"colonizer":{"q":10,"r":1}},
+    {"factionId":"outremer","capital":{"q":5,"r":7},"scout":{"q":5,"r":8},"colonizer":{"q":6,"r":7}}
+  ]
+}

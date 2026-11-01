@@ -1,0 +1,5 @@
+[
+  {"id":"nacre","nameKey":"faction.nacre","emblem":"crown-shell","sail":"pearl-fan","silhouette":"swan","color":"#f3ead7","accent":"#e76f62","human":true,"model":"assets/glb/scout.glb"},
+  {"id":"coral","nameKey":"faction.coral","emblem":"coral-branch","sail":"split-fin","silhouette":"ray","color":"#ef7167","accent":"#f6d8c7","human":false,"model":"assets/glb/scout.glb"},
+  {"id":"outremer","nameKey":"faction.outremer","emblem":"star-compass","sail":"crescent","silhouette":"blade","color":"#5579db","accent":"#e4dff5","human":false,"model":"assets/glb/scout.glb"}
+]

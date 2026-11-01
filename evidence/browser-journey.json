@@ -1,0 +1,58 @@
+{
+  "desktop": {
+    "colonization": {
+      "ports": 2,
+      "worked": [
+        "2,2"
+      ]
+    },
+    "productionAndResearch": {
+      "queue": [
+        {
+          "kind": "unit",
+          "typeId": "scout",
+          "turnsLeft": 1,
+          "totalTurns": 1
+        }
+      ],
+      "research": "star_charts",
+      "materials": 5
+    },
+    "movement": {
+      "tile": "5,0",
+      "provisions": 9
+    },
+    "turnAdvance": {
+      "round": 2,
+      "researchTurnsLeft": 1,
+      "units": 4
+    },
+    "saveReload": {
+      "round": 2,
+      "sameGame": true
+    },
+    "languages": [
+      "en",
+      "fr",
+      "es"
+    ],
+    "integratedHelpSections": 7,
+    "tideAtRoundFive": "rising"
+  },
+  "mobile": {
+    "touchColonization": true,
+    "canvas": {
+      "width": 780,
+      "height": 896
+    },
+    "consoleErrors": []
+  },
+  "autoplay": {
+    "winner": "outremer",
+    "reason": "lighthouses",
+    "round": 27,
+    "manualSavePreservedAtRound": 5,
+    "restart": true
+  },
+  "consoleErrors": []
+}

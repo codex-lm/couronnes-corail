@@ -1,0 +1,893 @@
+{
+  "completed": true,
+  "factionTurns": 80,
+  "round": 27,
+  "winner": "outremer",
+  "winReason": "lighthouses",
+  "scores": [
+    {
+      "factionId": "nacre",
+      "components": {
+        "ports": 40,
+        "capitals": 10,
+        "units": 3,
+        "technologies": 45,
+        "lighthouses": 25,
+        "exploration": 24,
+        "stockpile": 120
+      },
+      "total": 267
+    },
+    {
+      "factionId": "coral",
+      "components": {
+        "ports": 80,
+        "capitals": 10,
+        "units": 33,
+        "technologies": 45,
+        "lighthouses": 0,
+        "exploration": 24,
+        "stockpile": 189
+      },
+      "total": 381
+    },
+    {
+      "factionId": "outremer",
+      "components": {
+        "ports": 80,
+        "capitals": 10,
+        "units": 0,
+        "technologies": 45,
+        "lighthouses": 75,
+        "exploration": 24,
+        "stockpile": 215
+      },
+      "total": 449
+    }
+  ],
+  "finalIncome": [
+    {
+      "factionId": "nacre",
+      "gross": {
+        "provisions": 10,
+        "materials": 12,
+        "knowledge": 16
+      },
+      "upkeep": 1,
+      "net": {
+        "provisions": 9,
+        "materials": 12,
+        "knowledge": 16
+      },
+      "perPort": [
+        {
+          "portId": "p1",
+          "income": {
+            "provisions": 7,
+            "materials": 5,
+            "knowledge": 7
+          }
+        },
+        {
+          "portId": "p4",
+          "income": {
+            "provisions": 3,
+            "materials": 7,
+            "knowledge": 9
+          }
+        }
+      ]
+    },
+    {
+      "factionId": "coral",
+      "gross": {
+        "provisions": 20,
+        "materials": 24,
+        "knowledge": 32
+      },
+      "upkeep": 19,
+      "net": {
+        "provisions": 1,
+        "materials": 24,
+        "knowledge": 32
+      },
+      "perPort": [
+        {
+          "portId": "p2",
+          "income": {
+            "provisions": 3,
+            "materials": 7,
+            "knowledge": 9
+          }
+        },
+        {
+          "portId": "p5",
+          "income": {
+            "provisions": 3,
+            "materials": 5,
+            "knowledge": 9
+          }
+        },
+        {
+          "portId": "p7",
+          "income": {
+            "provisions": 6,
+            "materials": 5,
+            "knowledge": 7
+          }
+        },
+        {
+          "portId": "p10",
+          "income": {
+            "provisions": 8,
+            "materials": 7,
+            "knowledge": 7
+          }
+        }
+      ]
+    },
+    {
+      "factionId": "outremer",
+      "gross": {
+        "provisions": 12,
+        "materials": 17,
+        "knowledge": 38
+      },
+      "upkeep": 0,
+      "net": {
+        "provisions": 12,
+        "materials": 17,
+        "knowledge": 38
+      },
+      "perPort": [
+        {
+          "portId": "p3",
+          "income": {
+            "provisions": 3,
+            "materials": 5,
+            "knowledge": 9
+          }
+        },
+        {
+          "portId": "p6",
+          "income": {
+            "provisions": 3,
+            "materials": 5,
+            "knowledge": 11
+          }
+        },
+        {
+          "portId": "p8",
+          "income": {
+            "provisions": 3,
+            "materials": 5,
+            "knowledge": 9
+          }
+        },
+        {
+          "portId": "p9",
+          "income": {
+            "provisions": 3,
+            "materials": 2,
+            "knowledge": 9
+          }
+        }
+      ]
+    }
+  ],
+  "timeline": [
+    {
+      "round": 1,
+      "tide": "low",
+      "ports": {
+        "nacre": 2,
+        "coral": 2,
+        "outremer": 2
+      },
+      "units": {
+        "nacre": 1,
+        "coral": 1,
+        "outremer": 1
+      },
+      "technologies": {
+        "nacre": 0,
+        "coral": 0,
+        "outremer": 0
+      }
+    },
+    {
+      "round": 2,
+      "tide": "low",
+      "ports": {
+        "nacre": 2,
+        "coral": 2,
+        "outremer": 2
+      },
+      "units": {
+        "nacre": 1,
+        "coral": 1,
+        "outremer": 1
+      },
+      "technologies": {
+        "nacre": 1,
+        "coral": 0,
+        "outremer": 0
+      }
+    },
+    {
+      "round": 3,
+      "tide": "low",
+      "ports": {
+        "nacre": 2,
+        "coral": 2,
+        "outremer": 2
+      },
+      "units": {
+        "nacre": 1,
+        "coral": 1,
+        "outremer": 1
+      },
+      "technologies": {
+        "nacre": 1,
+        "coral": 1,
+        "outremer": 1
+      }
+    },
+    {
+      "round": 4,
+      "tide": "rising",
+      "ports": {
+        "nacre": 2,
+        "coral": 2,
+        "outremer": 2
+      },
+      "units": {
+        "nacre": 1,
+        "coral": 1,
+        "outremer": 1
+      },
+      "technologies": {
+        "nacre": 2,
+        "coral": 1,
+        "outremer": 1
+      }
+    },
+    {
+      "round": 5,
+      "tide": "rising",
+      "ports": {
+        "nacre": 2,
+        "coral": 2,
+        "outremer": 2
+      },
+      "units": {
+        "nacre": 1,
+        "coral": 1,
+        "outremer": 0
+      },
+      "technologies": {
+        "nacre": 2,
+        "coral": 1,
+        "outremer": 2
+      }
+    },
+    {
+      "round": 6,
+      "tide": "rising",
+      "ports": {
+        "nacre": 2,
+        "coral": 2,
+        "outremer": 2
+      },
+      "units": {
+        "nacre": 2,
+        "coral": 0,
+        "outremer": 0
+      },
+      "technologies": {
+        "nacre": 2,
+        "coral": 2,
+        "outremer": 2
+      }
+    },
+    {
+      "round": 7,
+      "tide": "rising",
+      "ports": {
+        "nacre": 2,
+        "coral": 3,
+        "outremer": 3
+      },
+      "units": {
+        "nacre": 2,
+        "coral": 0,
+        "outremer": 0
+      },
+      "technologies": {
+        "nacre": 3,
+        "coral": 2,
+        "outremer": 2
+      }
+    },
+    {
+      "round": 8,
+      "tide": "high",
+      "ports": {
+        "nacre": 2,
+        "coral": 3,
+        "outremer": 3
+      },
+      "units": {
+        "nacre": 2,
+        "coral": 0,
+        "outremer": 0
+      },
+      "technologies": {
+        "nacre": 3,
+        "coral": 3,
+        "outremer": 3
+      }
+    },
+    {
+      "round": 9,
+      "tide": "high",
+      "ports": {
+        "nacre": 2,
+        "coral": 3,
+        "outremer": 3
+      },
+      "units": {
+        "nacre": 2,
+        "coral": 1,
+        "outremer": 0
+      },
+      "technologies": {
+        "nacre": 3,
+        "coral": 3,
+        "outremer": 3
+      }
+    },
+    {
+      "round": 10,
+      "tide": "high",
+      "ports": {
+        "nacre": 2,
+        "coral": 3,
+        "outremer": 4
+      },
+      "units": {
+        "nacre": 2,
+        "coral": 1,
+        "outremer": 0
+      },
+      "technologies": {
+        "nacre": 4,
+        "coral": 4,
+        "outremer": 3
+      }
+    },
+    {
+      "round": 11,
+      "tide": "high",
+      "ports": {
+        "nacre": 2,
+        "coral": 3,
+        "outremer": 4
+      },
+      "units": {
+        "nacre": 3,
+        "coral": 2,
+        "outremer": 0
+      },
+      "technologies": {
+        "nacre": 4,
+        "coral": 4,
+        "outremer": 4
+      }
+    },
+    {
+      "round": 12,
+      "tide": "falling",
+      "ports": {
+        "nacre": 2,
+        "coral": 3,
+        "outremer": 4
+      },
+      "units": {
+        "nacre": 3,
+        "coral": 3,
+        "outremer": 1
+      },
+      "technologies": {
+        "nacre": 4,
+        "coral": 4,
+        "outremer": 4
+      }
+    },
+    {
+      "round": 13,
+      "tide": "falling",
+      "ports": {
+        "nacre": 2,
+        "coral": 4,
+        "outremer": 4
+      },
+      "units": {
+        "nacre": 3,
+        "coral": 2,
+        "outremer": 1
+      },
+      "technologies": {
+        "nacre": 5,
+        "coral": 5,
+        "outremer": 4
+      }
+    },
+    {
+      "round": 14,
+      "tide": "falling",
+      "ports": {
+        "nacre": 2,
+        "coral": 4,
+        "outremer": 4
+      },
+      "units": {
+        "nacre": 4,
+        "coral": 3,
+        "outremer": 2
+      },
+      "technologies": {
+        "nacre": 5,
+        "coral": 5,
+        "outremer": 5
+      }
+    },
+    {
+      "round": 15,
+      "tide": "falling",
+      "ports": {
+        "nacre": 2,
+        "coral": 4,
+        "outremer": 4
+      },
+      "units": {
+        "nacre": 4,
+        "coral": 3,
+        "outremer": 2
+      },
+      "technologies": {
+        "nacre": 6,
+        "coral": 5,
+        "outremer": 5
+      }
+    },
+    {
+      "round": 16,
+      "tide": "low",
+      "ports": {
+        "nacre": 2,
+        "coral": 4,
+        "outremer": 4
+      },
+      "units": {
+        "nacre": 5,
+        "coral": 4,
+        "outremer": 2
+      },
+      "technologies": {
+        "nacre": 6,
+        "coral": 5,
+        "outremer": 6
+      }
+    },
+    {
+      "round": 17,
+      "tide": "low",
+      "ports": {
+        "nacre": 2,
+        "coral": 4,
+        "outremer": 4
+      },
+      "units": {
+        "nacre": 5,
+        "coral": 5,
+        "outremer": 2
+      },
+      "technologies": {
+        "nacre": 6,
+        "coral": 6,
+        "outremer": 6
+      }
+    },
+    {
+      "round": 18,
+      "tide": "low",
+      "ports": {
+        "nacre": 2,
+        "coral": 4,
+        "outremer": 4
+      },
+      "units": {
+        "nacre": 5,
+        "coral": 6,
+        "outremer": 2
+      },
+      "technologies": {
+        "nacre": 6,
+        "coral": 6,
+        "outremer": 6
+      }
+    },
+    {
+      "round": 19,
+      "tide": "low",
+      "ports": {
+        "nacre": 2,
+        "coral": 4,
+        "outremer": 4
+      },
+      "units": {
+        "nacre": 5,
+        "coral": 5,
+        "outremer": 3
+      },
+      "technologies": {
+        "nacre": 7,
+        "coral": 6,
+        "outremer": 6
+      }
+    },
+    {
+      "round": 20,
+      "tide": "rising",
+      "ports": {
+        "nacre": 2,
+        "coral": 4,
+        "outremer": 4
+      },
+      "units": {
+        "nacre": 4,
+        "coral": 6,
+        "outremer": 3
+      },
+      "technologies": {
+        "nacre": 7,
+        "coral": 7,
+        "outremer": 7
+      }
+    },
+    {
+      "round": 21,
+      "tide": "rising",
+      "ports": {
+        "nacre": 2,
+        "coral": 4,
+        "outremer": 4
+      },
+      "units": {
+        "nacre": 2,
+        "coral": 7,
+        "outremer": 3
+      },
+      "technologies": {
+        "nacre": 7,
+        "coral": 7,
+        "outremer": 7
+      }
+    },
+    {
+      "round": 22,
+      "tide": "rising",
+      "ports": {
+        "nacre": 2,
+        "coral": 4,
+        "outremer": 4
+      },
+      "units": {
+        "nacre": 2,
+        "coral": 6,
+        "outremer": 3
+      },
+      "technologies": {
+        "nacre": 8,
+        "coral": 7,
+        "outremer": 7
+      }
+    },
+    {
+      "round": 23,
+      "tide": "rising",
+      "ports": {
+        "nacre": 2,
+        "coral": 4,
+        "outremer": 4
+      },
+      "units": {
+        "nacre": 2,
+        "coral": 6,
+        "outremer": 2
+      },
+      "technologies": {
+        "nacre": 8,
+        "coral": 8,
+        "outremer": 8
+      }
+    },
+    {
+      "round": 24,
+      "tide": "high",
+      "ports": {
+        "nacre": 2,
+        "coral": 4,
+        "outremer": 4
+      },
+      "units": {
+        "nacre": 2,
+        "coral": 7,
+        "outremer": 1
+      },
+      "technologies": {
+        "nacre": 8,
+        "coral": 8,
+        "outremer": 8
+      }
+    },
+    {
+      "round": 25,
+      "tide": "high",
+      "ports": {
+        "nacre": 2,
+        "coral": 4,
+        "outremer": 4
+      },
+      "units": {
+        "nacre": 1,
+        "coral": 8,
+        "outremer": 1
+      },
+      "technologies": {
+        "nacre": 9,
+        "coral": 8,
+        "outremer": 8
+      }
+    },
+    {
+      "round": 26,
+      "tide": "high",
+      "ports": {
+        "nacre": 2,
+        "coral": 4,
+        "outremer": 4
+      },
+      "units": {
+        "nacre": 1,
+        "coral": 10,
+        "outremer": 0
+      },
+      "technologies": {
+        "nacre": 9,
+        "coral": 8,
+        "outremer": 9
+      }
+    }
+  ],
+  "recentEvents": [
+    {
+      "id": 453,
+      "round": 27,
+      "type": "victory",
+      "textKey": "log.victory",
+      "params": {
+        "winner": "outremer",
+        "reason": "lighthouses"
+      },
+      "factionId": null
+    },
+    {
+      "id": 452,
+      "round": 27,
+      "type": "production",
+      "textKey": "log.buildingReady",
+      "params": {
+        "building": "great_lighthouse",
+        "port": "p6"
+      },
+      "factionId": "outremer"
+    },
+    {
+      "id": 451,
+      "round": 27,
+      "type": "move",
+      "textKey": "log.expedition",
+      "params": {
+        "unit": "escort",
+        "tile": "8,7"
+      },
+      "factionId": "coral"
+    },
+    {
+      "id": 450,
+      "round": 27,
+      "type": "move",
+      "textKey": "log.expedition",
+      "params": {
+        "unit": "escort",
+        "tile": "5,7"
+      },
+      "factionId": "coral"
+    },
+    {
+      "id": 449,
+      "round": 27,
+      "type": "move",
+      "textKey": "log.expedition",
+      "params": {
+        "unit": "escort",
+        "tile": "8,6"
+      },
+      "factionId": "coral"
+    },
+    {
+      "id": 448,
+      "round": 27,
+      "type": "research",
+      "textKey": "log.researchStarted",
+      "params": {
+        "tech": "current_lore"
+      },
+      "factionId": "coral"
+    },
+    {
+      "id": 447,
+      "round": 27,
+      "type": "production",
+      "textKey": "log.unitReady",
+      "params": {
+        "unit": "bomber",
+        "port": "p2"
+      },
+      "factionId": "coral"
+    },
+    {
+      "id": 446,
+      "round": 27,
+      "type": "research",
+      "textKey": "log.researchComplete",
+      "params": {
+        "tech": "pharos_architecture"
+      },
+      "factionId": "coral"
+    },
+    {
+      "id": 445,
+      "round": 27,
+      "type": "move",
+      "textKey": "log.expedition",
+      "params": {
+        "unit": "colonizer",
+        "tile": "0,0"
+      },
+      "factionId": "nacre"
+    },
+    {
+      "id": 444,
+      "round": 27,
+      "type": "production",
+      "textKey": "log.productionQueued",
+      "params": {
+        "item": "escort",
+        "port": "p4"
+      },
+      "factionId": "nacre"
+    },
+    {
+      "id": 443,
+      "round": 27,
+      "type": "production",
+      "textKey": "log.productionQueued",
+      "params": {
+        "item": "escort",
+        "port": "p4"
+      },
+      "factionId": "nacre"
+    },
+    {
+      "id": 442,
+      "round": 27,
+      "type": "production",
+      "textKey": "log.buildingReady",
+      "params": {
+        "building": "great_lighthouse",
+        "port": "p4"
+      },
+      "factionId": "nacre"
+    },
+    {
+      "id": 441,
+      "round": 26,
+      "type": "production",
+      "textKey": "log.productionQueued",
+      "params": {
+        "item": "coral_shipyard",
+        "port": "p9"
+      },
+      "factionId": "outremer"
+    },
+    {
+      "id": 440,
+      "round": 26,
+      "type": "production",
+      "textKey": "log.productionQueued",
+      "params": {
+        "item": "escort",
+        "port": "p8"
+      },
+      "factionId": "outremer"
+    },
+    {
+      "id": 439,
+      "round": 26,
+      "type": "production",
+      "textKey": "log.productionQueued",
+      "params": {
+        "item": "escort",
+        "port": "p8"
+      },
+      "factionId": "outremer"
+    },
+    {
+      "id": 438,
+      "round": 26,
+      "type": "production",
+      "textKey": "log.productionQueued",
+      "params": {
+        "item": "escort",
+        "port": "p3"
+      },
+      "factionId": "outremer"
+    },
+    {
+      "id": 437,
+      "round": 26,
+      "type": "production",
+      "textKey": "log.productionQueued",
+      "params": {
+        "item": "escort",
+        "port": "p3"
+      },
+      "factionId": "outremer"
+    },
+    {
+      "id": 436,
+      "round": 26,
+      "type": "research",
+      "textKey": "log.researchStarted",
+      "params": {
+        "tech": "long_range_ballistae"
+      },
+      "factionId": "outremer"
+    },
+    {
+      "id": 435,
+      "round": 26,
+      "type": "production",
+      "textKey": "log.buildingReady",
+      "params": {
+        "building": "great_lighthouse",
+        "port": "p8"
+      },
+      "factionId": "outremer"
+    },
+    {
+      "id": 434,
+      "round": 26,
+      "type": "production",
+      "textKey": "log.buildingReady",
+      "params": {
+        "building": "great_lighthouse",
+        "port": "p3"
+      },
+      "factionId": "outremer"
+    }
+  ]
+}

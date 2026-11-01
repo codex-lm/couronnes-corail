@@ -1,0 +1,6 @@
+[
+  {"id":"scout","nameKey":"unit.scout","descriptionKey":"unit.scout.desc","icon":"sail","model":"assets/glb/scout.glb","sprite":"assets/sprites/scout.png","cost":{"provisions":2,"materials":5,"knowledge":0},"buildTurns":1,"maxHp":6,"move":4,"vision":3,"attack":2,"range":1,"armor":0,"upkeep":1},
+  {"id":"colonizer","nameKey":"unit.colonizer","descriptionKey":"unit.colonizer.desc","icon":"shell","model":"assets/glb/colonizer.glb","sprite":"assets/sprites/colonizer.png","cost":{"provisions":4,"materials":8,"knowledge":0},"buildTurns":2,"maxHp":6,"move":3,"vision":2,"attack":0,"range":1,"armor":0,"upkeep":1},
+  {"id":"escort","nameKey":"unit.escort","descriptionKey":"unit.escort.desc","icon":"shield","model":"assets/glb/escort.glb","sprite":"assets/sprites/escort.png","cost":{"provisions":3,"materials":9,"knowledge":0},"buildTurns":2,"maxHp":12,"move":3,"vision":2,"attack":4,"range":1,"armor":1,"upkeep":2},
+  {"id":"bomber","nameKey":"unit.bomber","descriptionKey":"unit.bomber.desc","icon":"crossbow","model":"assets/glb/bomber.glb","sprite":"assets/sprites/bomber.png","cost":{"provisions":3,"materials":12,"knowledge":0},"buildTurns":3,"maxHp":7,"move":2,"vision":2,"attack":5,"range":2,"armor":0,"upkeep":2}
+]

@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "mission": "Couronnes de Corail",
+  "kind": "one-off-creation",
+  "authorization": "Cédric — mission ponctuelle du 2026-11-01",
+  "startedAt": "2026-11-01T00:07:58+01:00",
+  "status": "in-progress",
+  "projectDirectory": "C:/dev/kimi-games/games/couronnes-corail",
+  "idempotencyKey": "kimi-games-couronnes-corail-v1",
+  "identity": {
+    "workshop": "Kimi Games",
+    "lob7PublicId": "usr_zxb87j1k",
+    "githubAccount": "codex-lm"
+  },
+  "concept": {
+    "idea": "Un petit 4X maritime au tour par tour où trois civilisations disputent un archipel miniature transformé par des marées annoncées.",
+    "playerActions": "Explorer, fonder jusqu’à quatre ports, développer trois ressources, rechercher douze technologies, construire une flotte et capturer des ports.",
+    "decisionsAndSensations": "Préparer des expéditions selon le calendrier des marées, choisir des fenêtres tactiques, développer des récifs complémentaires et révéler une petite aventure stratégique.",
+    "objectiveAndEnding": "Allumer trois grands phares ou contrôler les deux capitales adverses ; score public au tour 40 et défaite à la perte du dernier port.",
+    "artDirection": "Maquette isométrique précieuse en nacre, corail, outremer et encre, avec sprites et modèles originaux réellement produits dans Blender.",
+    "scope": "Carte 11 × 9 dessinée à la main, trois factions, quatre navires, marées tous les quatre tours, douze technologies, EN/FR/ES, tactile, sauvegarde locale."
+  },
+  "constraints": {
+    "onlyThisProject": true,
+    "preserveOtherGamesAndSchedules": true,
+    "englishDefault": true,
+    "maximumPortsPerFaction": 4,
+    "turnLimit": 40,
+    "tidePeriod": 4
+  },
+  "tracking": {
+    "development": "completed",
+    "localTests": "passed",
+    "lob7Preflight": "passed",
+    "privatePreview": "not-run",
+    "publication": "not-started",
+    "publicBrowser": "not-run"
+  },
+  "operations": [
+    {
+      "type": "blender-generation",
+      "status": "completed",
+      "generator": "assets/scripts/generate_assets.py",
+      "blendFiles": 36,
+      "glbFiles": 35,
+      "animatedGlbFiles": 18,
+      "blenderVersion": "4.5.3 LTS"
+    },
+    {
+      "type": "local-verification",
+      "status": "passed",
+      "unitAndContentTests": 27,
+      "browserJourney": "evidence/browser-journey.json",
+      "simulation": "evidence/simulation.json",
+      "simulationResult": "Outremer — victoire par trois phares au tour 27",
+      "desktopAndTouch": true,
+      "consoleErrors": 0
+    },
+    {
+      "type": "lob7-local-preflight",
+      "status": "passed",
+      "recipe": "static-web-v1",
+      "evidence": "evidence/lob7-preflight.json",
+      "archiveBytes": 9612711,
+      "entries": 158
+    },
+    {
+      "type": "github-repository",
+      "idempotencyKey": "kimi-games-couronnes-corail-v1",
+      "repository": "codex-lm/couronnes-corail",
+      "status": "selected"
+    }
+  ],
+  "notes": [
+    "Le build autonome index.html est généré depuis les sources avec npm run build et testé sur le livrable lui-même.",
+    "Les autres jeux et les tâches planifiées n’ont pas été modifiés."
+  ]
+}

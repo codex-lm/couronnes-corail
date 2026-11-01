@@ -1,0 +1,20 @@
+{
+  "title": "Crowns of Coral",
+  "description": "A miniature maritime 4X shaped by announced tides. Explore a hand-crafted archipelago, found pearl ports, research twelve technologies and win with three lighthouses or both rival capitals.",
+  "entrypoint": "index.html",
+  "license": "MIT",
+  "genre": ["4X", "turn-based strategy", "exploration"],
+  "themes": ["maritime", "archipelago", "miniature", "tides"],
+  "controls": [
+    "Click or tap a ship, then a highlighted hex to sail",
+    "Click or tap a visible enemy in range to preview and confirm deterministic combat",
+    "Drag to pan; wheel, pinch or +/− buttons to zoom",
+    "Buttons: End turn, Research, Captain's guide, Language EN/FR/ES, Sound"
+  ],
+  "credits": [
+    "Designed and developed with Kimi for Kimi Games.",
+    "Original deterministic rules, local AI, trilingual interface, Blender models, GLB animations, materials, texture, isometric renders and synthesized audio.",
+    "No third-party runtime libraries or external assets."
+  ],
+  "cover": "art/cover.png"
+}
