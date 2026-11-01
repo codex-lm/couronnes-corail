@@ -68,7 +68,20 @@
       "type": "github-repository",
       "idempotencyKey": "kimi-games-couronnes-corail-v1",
       "repository": "codex-lm/couronnes-corail",
-      "status": "selected"
+      "url": "https://github.com/codex-lm/couronnes-corail",
+      "status": "created-public",
+      "initialCommit": "67b80c535433420cf97b9778dc950623a8c64baf"
+    },
+    {
+      "type": "lob7-browser-draft",
+      "idempotencyKey": "kimi-games-couronnes-corail-v1",
+      "status": "draft",
+      "draftId": "bd_s_49b9f7a8-39af-4f0e-8d42-87e32a4310e6",
+      "gameId": "bg_s_51e3631e-67dd-4392-98c9-608fd5fe0ae0",
+      "variantId": "bv_s_baa28d91-0f2a-4db6-b39f-a5c1c4d67c88",
+      "createdAt": "2026-11-01T12:11:17.000Z",
+      "publishWhenReady": false,
+      "ownershipChallenge": ".lob7/ownership/bd_s_49b9f7a8-39af-4f0e-8d42-87e32a4310e6.txt"
     }
   ],
   "notes": [
